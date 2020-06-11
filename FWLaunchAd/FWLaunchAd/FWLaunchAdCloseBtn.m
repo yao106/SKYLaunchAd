@@ -17,7 +17,7 @@
 #define kFontColor  [UIColor whiteColor]
 
 /** 提示文字 */
-static NSString *const kSkipTitle = @"跳过";
+static NSString *const kSkipTitle = NSLocalizedString(@"SKIP",@"跳过");
 /** 倒计时单位 */
 static NSString *const kDurationUnit = @"S";
 
