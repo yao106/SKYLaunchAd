@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SKYLaunchAd"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "启动广告图，支持本地或者网络图片、gif图片、视频."
 
   # This description is used to generate tags and improve search results.
