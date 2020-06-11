@@ -17,7 +17,7 @@
 #define kFontColor  [UIColor whiteColor]
 
 /** 提示文字 */
-static NSString *const kSkipTitle = NSLocalizedString(@"SKIP",@"跳过");
+static NSString *const kSkipTitle = @"跳过";
 /** 倒计时单位 */
 static NSString *const kDurationUnit = @"S";
 
@@ -142,12 +142,12 @@ static NSString *const kDurationUnit = @"S";
                 break;
             case AdSkipTypeText:
             {
-                self.timeLabel.text = kSkipTitle;
+                self.timeLabel.text = NSLocalizedString(@"SKIP",kSkipTitle);
             }
                 break;
             case AdSkipTypeTimeText:
             {
-                self.timeLabel.text = [NSString stringWithFormat:@"%ld %@", duration, kSkipTitle];
+                self.timeLabel.text = [NSString stringWithFormat:@"%ld %@", duration, NSLocalizedString(@"SKIP",kSkipTitle)];
             }
                 break;
             case AdSkipTypeRoundTime:
@@ -157,7 +157,7 @@ static NSString *const kDurationUnit = @"S";
                 break;
             case AdSkipTypeRoundText:
             {
-                self.timeLabel.text = kSkipTitle;
+                self.timeLabel.text = NSLocalizedString(@"SKIP",kSkipTitle);
             }
                 break;
             case AdSkipTypeRoundProgressTime:
@@ -167,7 +167,7 @@ static NSString *const kDurationUnit = @"S";
                 break;
             case AdSkipTypeRoundProgressText:
             {
-                self.timeLabel.text = kSkipTitle;
+                self.timeLabel.text = NSLocalizedString(@"SKIP",kSkipTitle);
             }
                 break;
                 
